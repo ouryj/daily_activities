@@ -1,0 +1,24 @@
+<% include ../partials/header %>
+
+<div class="ui text main container segment">
+    <h1 class="ui header"> Please share your story with us below</h1>
+
+    <form class="ui form" action="/stories" method="POST" >
+            <div class="field">
+              <label>Title</label>
+              <input type="text" name="title" placeholder="title of story">
+            </div>
+            <div class="field">
+              <label>content</label>
+              <textarea name="content" placeholder="share your story in here"></textarea>
+            </div>
+         
+            <button class="ui green button" type="submit">Share</button>
+          </form>
+
+
+
+
+</div>
+
+<% include ../partials/footer %>

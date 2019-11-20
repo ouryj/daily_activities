@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daily Story</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+</head>
+<body>
+        <div class="ui inverted segment">
+                <div class="ui inverted secondary menu">
+                  <a href="/" class="active item">
+                    Home
+                  </a>
+                  <a href="/stories" class="item">view stories</a>
+                  <a href="/register" class="item">
+                    register
+                  </a>
+                  <a href="/login" class="item">
+                    login
+                  </a>
+                  <a href="/logout" class="item">logout</a>
+                </div>
+              </div>
+
+
+
+    <div class="ui text main container segment">
+
+     <%if(error && error.length > 0){ %>
+        <div class="ui negative message">
+             <i class="close icon"></i> 
+             <p><%=error%></p>
+        </div>
+         <%} else if(success && success.length > 0){ %>
+         <div class="ui success message">
+            <i class="close icon"></i>    
+             <p><%=success%></p>
+         </div>
+         <%}%>
+    </div>
+    
+
+

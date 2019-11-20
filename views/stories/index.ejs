@@ -1,0 +1,15 @@
+<% include ../partials/header %>
+
+<div class="ui text main container segment">
+    <h1 class="ui header"> <a href="/stories/new" class="item">Post your Story</a> </h1>
+    <div class="ui segment">
+        <%stories.forEach(function(story){ %>
+            <h3 class="header"><%=story.title%></h3>
+            <p class="text"><%=story.content.substring(0,50)%>...</p>
+            <a href="/stories/<%=story._id%>" class="ui blue button">More info</a>
+
+       <% }) %>
+    </div>
+</div>
+
+<% include ../partials/footer %>
